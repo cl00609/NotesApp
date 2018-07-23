@@ -1,5 +1,24 @@
 console.log('Starting notes.js');
 
-module.exports.age = 25;
+const addNote = (title, body) => {
+  console.log('Adding note', title, body);
+};
 
-module.exports.add = (a, b) => a + b;
+const getAll = () => {
+  console.log('Getting all notes');
+};
+
+const getNote = (title) => {
+  console.log('Getting note', title);
+};
+
+const removeNote = (title) => {
+  console.log('Removing note', title);
+};
+
+module.exports = {
+  addNote,
+  getAll,
+  getNote,
+  removeNote,
+};
